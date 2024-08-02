@@ -17,7 +17,7 @@ const ColorModeToggle = () => {
   return (
     <div>
       <div className='float-right mr-auto'>
-        <button onClick={() => setDarkMode(!darkMode)} className='border rounded-md p-2 text-lg bg-transparent border-gray-300 
+        <button onClick={() => setDarkMode(!darkMode)} className='border rounded-md px-2 py-2 text-lg bg-transparent border-gray-300 
         hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700 transition duration-300'>
             {darkMode? <FaMoon /> : <FaSun />}
         </button>

@@ -3,7 +3,28 @@
 import Login from "./Login";
 import ColorModeToggle from './ColorModeToggle'
 import { useState } from "react";
+import { ChartConfig, ChartContainer } from "@/components/ui/chart";
+import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
+const chartData = [
+  { month: "January", desktop: 186, mobile: 80 },
+  { month: "February", desktop: 305, mobile: 200 },
+  { month: "March", desktop: 237, mobile: 120 },
+  { month: "April", desktop: 73, mobile: 190 },
+  { month: "May", desktop: 209, mobile: 130 },
+  { month: "June", desktop: 214, mobile: 140 },
+]
+
+const chartConfig = {
+  desktop: {
+    label: "Desktop",
+    color: "#2563eb",
+  },
+  mobile: {
+    label: "Mobile",
+    color: "#60a5fa",
+  },
+} satisfies ChartConfig;
 export default function Home() {
   const [toggle, setToggle] = useState(false);
 
@@ -12,15 +33,27 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <nav className='flex justify-end'>
+    <main className="min-h-screen p-24">
+      <div className='flex justify-end'>
         {!toggle && <button className='border border-blue-500 rounded-md font-semibold px-2 py-2 mx-4'
         onClick={openLogin}>Login</button>}
         {toggle && <Login />}
         <ColorModeToggle />
-      </nav>
-       <div className='flex justify-center items-center '>
-        
+      </div>
+       <div>
+        <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+          <BarChart accessibilityLayer data={chartData}>
+            <CartesianGrid vertical={false}/>
+            <XAxis
+              dataKey="month"
+              tickLine={false}
+              tickMargin={10}
+              axisLine={false}
+              tickFormatter={(value) => value.slice(0, 3)} />
+            <Bar dataKey="desktop" fill='var(--color--desktop)' radius={4}/>
+            <Bar dataKey="mobile" fill='var(--color--mobile)' radius={4}/>
+          </BarChart>
+        </ChartContainer>
        </div>
     </main>
   );
