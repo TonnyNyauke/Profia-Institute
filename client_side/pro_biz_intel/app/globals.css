@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.dark {
+  /* Add your dark mode styles here */
+  background-color: black;
+  color: #fff;
+}
+
+.dark button {
+  /* Add your dark mode styles for the button here */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dark button:hover {
+  /* Add your dark mode styles for the button hover here */
+  background-color: #202b8a;
+  
+}
