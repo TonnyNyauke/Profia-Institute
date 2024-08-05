@@ -7,7 +7,7 @@ function Sidebar() {
         <Link href='/financialstatement' className='w-9/12 border border-blue-500 rounded-md mb-4 px-2 py-2 text-center'>Finacial Statement</Link>
         <button className='w-9/12 border border-blue-500 rounded-md mb-4 px-2 py-2'>Analysis Report</button>
         <button className='w-9/12 border border-blue-500 rounded-md mb-4 px-2 py-2'>Historical Report</button>
-        <button className='w-9/12 border border-blue-500 rounded-md mb-4 px-2 py-2'>Budgeting & Planning</button>
+        <Link href='/budgetandplan' className='w-9/12 border border-blue-500 rounded-md mb-4 px-2 py-2 text-center'>Budgeting & Planning</Link>
         <button className='w-9/12 border border-blue-500 rounded-md mb-4 px-2 py-2 bg-blue-500 hover:bg-blue-600 text-white'>Book Consultation</button>
     </div>
   )
