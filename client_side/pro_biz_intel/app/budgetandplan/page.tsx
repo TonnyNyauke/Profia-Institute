@@ -14,7 +14,7 @@ import MarketingAndLeadsType from './marketingandleads/MarketingAndLeadsType'
 
 
 
-function page() {
+function Page() {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
 
   const handleShowComponent = (component: string) => {
@@ -46,4 +46,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
