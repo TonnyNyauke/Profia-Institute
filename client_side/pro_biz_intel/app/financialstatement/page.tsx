@@ -11,10 +11,14 @@ import { FaArrowLeft } from 'react-icons/fa'
 function Page() {
   return (
     <div className='m-1 p-4'>
-        <nav className='m-4'>
+        <nav className='m-4 flex flex-row justify-between'>
             <Link href="/home"><FaArrowLeft /></Link>
+            <Link href='/financialstatement/balancesheet'>Balance sheet</Link>
+            <Link href='/financialstatement/incomestatement'>Income statement</Link>
+            <Link href='/financialstatement/balancesheet'>Cashflow statement</Link>
         </nav>
-        <div className='flex flex-row'>
+        <SeparatorLine />
+        <div className='flex flex-row m-2'>
             <div className='border-r border-blue-500 w-1/2'>
                 <Income />
                 <Expenses />
