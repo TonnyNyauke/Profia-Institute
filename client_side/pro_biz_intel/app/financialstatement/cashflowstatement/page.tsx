@@ -2,7 +2,9 @@ import React from 'react'
 
 function Page() {
   return (
-    <div>Page</div>
+    <div>
+      <h2>Cashflow</h2>
+    </div>
   )
 }
 
