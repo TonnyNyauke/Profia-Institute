@@ -3,13 +3,15 @@ import Sidebar from './sidebar'
 import Link from 'next/link'
 import SeparatorLine from '../SeparatorLine'
 import Mainbar from './mainbar'
+import Image from 'next/image'
+import logo from '../Photos/logo.png'
 
 function Page() {
   return (
     <div className='m-4'>
       <nav className='flex flex-row'>
         <div className="border-r border-blue-600 w-1/3 mx-2">
-          <Link href="#" className="text-blue-600 hover:text-blue-900">Home</Link>
+          <Link href="#" className="text-blue-600 hover:text-blue-900"><Image  src={logo} alt='logo' width={100} height={100}/></Link>
         </div>
         <div className='w-2/3 flex justify-between mx-2'>
           <Link href="#" className="text-blue-600 hover:text-blue-900">Sales Entry</Link>
