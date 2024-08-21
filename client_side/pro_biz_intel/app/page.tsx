@@ -42,7 +42,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 xl:w-1/3 mb-4 border border-gray-300 rounded-sm mx-2">
             <div className="mx-4">
               <p className="text-lg text-gray-600 mb-2">
-                "Business Analytics has been a game-changer for our company. We've seen a 20% increase in sales since implementing their platform."
+                Business Analytics has been a game-changer for our company. We've seen a 20% increase in sales since implementing their platform.
               </p>
               <p className="text-sm text-gray-500">- John Doe, CEO of XYZ Inc.</p>
             </div>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 xl:w-1/3 mb-4 border border-gray-300 rounded-sm mx-2">
             <div className="mx-4">
               <p className="text-lg text-gray-600 mb-2">
-                "The insights we've gained from Business Analytics have helped us optimize our marketing strategy and reduce costs by 15%."
+                The insights we have gained from Business Analytics have helped us optimize our marketing strategy and reduce costs by 15%.
               </p>
               <p className="text-sm text-gray-500">- Jane Smith, Marketing Manager at ABC Corp.</p>
             </div>
@@ -58,7 +58,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 xl:w-1/3 mb-4 border border-gray-300 rounded-sm mx-2">
             <div className="mx-4">
               <p className="text-lg text-gray-600 mb-2">
-                "Business Analytics has given us a competitive edge in our industry. We can't imagine going back to our old way of doing things."
+                Business Analytics has given us a competitive edge in our industry. We can't imagine going back to our old way of doing things.
               </p>
               <p className="text-sm text-gray-500">- Bob Johnson, Founder of DEF Startups</p>
             </div>
