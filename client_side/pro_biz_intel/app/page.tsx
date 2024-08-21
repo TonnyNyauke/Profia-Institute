@@ -20,15 +20,7 @@ export default function Home() {
   return (
     <main className="min-h-screen p-24">
       <div className="flex justify-end mb-12">
-        {!toggle && (
-          <button
-            className="border border-blue-500 rounded-md font-semibold px-2 py-2 mx-4 hover:bg-blue-500 hover:text-white transition duration-300"
-            onClick={openLogin}
-          >
-            Login
-          </button>
-        )}
-        {toggle && <Login />}
+       <Login />
         <ColorModeToggle />
       </div>
 
