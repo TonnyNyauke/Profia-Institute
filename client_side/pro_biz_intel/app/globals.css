@@ -71,5 +71,18 @@
   background-image: url('./Photos/hero.jpg');
   background-size: cover;
 }
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  height: 100%;
+  width: 40%;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  overflow: hidden;
+}
 
 

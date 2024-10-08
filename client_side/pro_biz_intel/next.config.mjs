@@ -5,8 +5,8 @@ const nextConfig = {
     },
     middleware: [
       {
-        // Path to your Middleware file
-        path: './middleware.js',
+        name: 'clerk',
+        path: './middleware/clerk.ts',
       },
     ],
   };
